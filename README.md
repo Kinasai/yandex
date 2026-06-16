@@ -10,6 +10,7 @@
 - `php artisan migrate`
 - `npm i`
 - `npm run build`
+- `php artisan serve`
   
 ### Тестовое наполнение таблицы
 
