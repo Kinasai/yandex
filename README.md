@@ -2,6 +2,23 @@
 
 Данный проект реализует комплексный подход к взаимодействию с защищённым веб-API. Вместо поверхностного парсинга HTML, проект использует внутренние запросы фронтенда, восстанавливает логику генерации сигнатур и поддерживает сессионную идентификацию.
 
+## Первый запуск
+- `git clone https://github.com/Kinasai/yandex.git`
+- `cd yandex`
+- `composer update`
+- `cp .env.example .env && php artisan key:generate && php artisan storage:link`
+- `php artisan migrate`
+- `npm i`
+- `npm run build`
+  
+### Тестовое наполнение таблицы
+
+- `php artisan db:seed`
+
+### Данные для авторизации
+- `test@example.com`
+- `password`
+
 ## Основные возможности
 
 - Имитация сессии — автоматическое получение, хранение и обновление CSRF-токенов и Session Cookies.
